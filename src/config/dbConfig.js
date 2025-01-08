@@ -4,6 +4,8 @@ dotenv.config();
 
 import mysql from 'mysql2';
 
+console.log(process.env)
+
 const dbConfig = {
   host: process.env.DB_HOST,
   port: process.env.DB_PORT ? +process.env.DB_PORT : 3306,
