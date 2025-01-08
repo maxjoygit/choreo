@@ -8,7 +8,6 @@ import pool from '../config/dbConfig.js';
 
 import cryptApi from '../helpers/cryptApi.js';
 
-
 const authApp = async (req, res, next) => {
   const authHeader = await req.header('authorization');
 
