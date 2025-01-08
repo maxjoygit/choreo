@@ -779,7 +779,7 @@ class ApiController {
     try {
       await this.sql.query(`DROP TABLE IF EXISTS apitokens`, []);
 
-      const [rows] = await this.sql.query(
+      await this.sql.query(
         `
       CREATE TABLE apitokens (
           id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
