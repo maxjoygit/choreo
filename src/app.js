@@ -8,6 +8,8 @@ dotenv.config();
 
 import apiRouter from './routes/apiRouter.js';
 
+console.log(process.env)
+
 const PORT = process.env.PORT || 8080;
 
 const app = express();
