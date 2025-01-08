@@ -1,5 +1,5 @@
 {
-  "name": "max-choro-nodejs",
+  "name": "max-choreo-nodejs",
   "type": "module",
   "scripts": {
     "start": "node src/app.js",

@@ -1,11 +1,10 @@
 schemaVersion: "1.1"
 endpoints:
-    - name: books-rest-endpoint
-      displayName: Books REST Endpoint
+    - name: max-choreo-nodejs
+      displayName: max-choreo-nodejs
       service:
-        basePath: /reading-list
+        basePath: /
         port: 8080
       type: REST
       networkVisibilities:
         - Public
-      schemaFilePath: openapi.yaml
