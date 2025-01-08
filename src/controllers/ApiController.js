@@ -4,8 +4,6 @@ import * as jose from 'jose';
 
 import axios from 'axios';
 
-
-
 import pool from '../config/dbConfig.js';
 
 import cryptApi from '../helpers/cryptApi.js';
@@ -662,9 +660,7 @@ class ApiController {
   };
 
   run = async (req, res) => {
-
     try {
-
       const [rows] = await this.sql.query(
         'SELECT * FROM crons WHERE deleted_at IS NULL',
         [],

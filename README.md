@@ -13,6 +13,7 @@ Note: The following file paths are relative to the path /nodejs/rest-api/
 | openapi.yaml           | OpenAPI contract of the service. This is needed to publish our service as a managed API. This openapi.yaml file is referenced by the .choreo/endpoints.yaml. |
 
 ### Prerequisites
+
 1. Fork the repositoy
 
 ## Deploy Application
@@ -24,20 +25,19 @@ You can select either Docker or Go as buildpacks. Fill as follow according to se
 1. Select `Service` Card from Component Creation Wizard
 2. Select `NodeJs` as the buildpack. Fill as follow according to selected Buildpack.
 
-    | **Field**             | **Description**                               |
-    |-----------------------|-----------------------------------------------|
-    |Name           | Reading books list service              |
-    |Description    | reading books list service        |
-    | **GitHub Account**    | Your account                                  |
-    | **GitHub Repository** | choreo-samples |
-    | **Branch**            | **`main`**                               |
-    | **Buildpack**      | `NodeJs` |
-    | **Select Go Project Directory**       | reading-books-list-service-nodejs|
-    | **Select Language Version**              | 18.x.x |
+   | **Field**                       | **Description**                   |
+   | ------------------------------- | --------------------------------- |
+   | Name                            | Reading books list service        |
+   | Description                     | reading books list service        |
+   | **GitHub Account**              | Your account                      |
+   | **GitHub Repository**           | choreo-samples                    |
+   | **Branch**                      | **`main`**                        |
+   | **Buildpack**                   | `NodeJs`                          |
+   | **Select Go Project Directory** | reading-books-list-service-nodejs |
+   | **Select Language Version**     | 18.x.x                            |
 
 3. Click Create. Once the component creation is complete, you will see the component overview page.
 4. Deploy the created component
-
 
 ## Execute the Sample Locally
 

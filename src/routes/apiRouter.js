@@ -28,11 +28,11 @@ apiRouter.get('/cf', apiController?.cf);
 
 apiRouter.get('/run', apiController?.run);
 
-//apiRouter.get('/createtable', apiController?.createTable);
+apiRouter.get('/createtable', apiController?.createTable);
 
-//apiRouter.get('/createtabletoken', apiController?.createTableToken);
+apiRouter.get('/createtabletoken', apiController?.createTableToken);
 
-//apiRouter.get('/app', apiController?.app);
+apiRouter.get('/app', apiController?.app);
 
 apiRouter.get('/test', apiController?.test);
 
