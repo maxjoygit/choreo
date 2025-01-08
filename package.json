@@ -1,23 +1,22 @@
 {
-  "name": "nodejs-sample-rest-api",
-  "version": "1.0.0",
-  "description": "A sample nodejs REST API - in-memory cache",
-  "main": "index.js",
+  "name": "max-choro-nodejs",
   "type": "module",
   "scripts": {
-    "start": "node index.mjs",
-    "test": "mocha test.mjs"
+    "start": "node src/app.js",
+    "format": "npx prettier . --write",
+    "dev": "nodemon -L -e js,ejs,css src/app.js"
   },
-  "author": "",
-  "license": "Apache-2.0",
   "dependencies": {
-    "express": "^4.18.1",
-    "node-cache": "^5.1.2",
-    "uuid": "^9.0.0"
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jose": "^5.2.4",
+    "mysql2": "^3.9.6",
+    "pg": "^8.13.1",
+    "zod": "^3.22.5"
   },
   "devDependencies": {
-    "chai": "^4.3.8",
-    "chai-http": "^4.4.0",
-    "mocha": "^10.2.0"
+    "nodemon": "^3.1.0"
   }
 }

@@ -34,5 +34,5 @@ RUN addgroup -g 10014 choreo && \
 # Set a non-root user
 USER 10014
 
-CMD [ "node", "index.mjs" ]
+CMD [ "npm", "start" ]
 

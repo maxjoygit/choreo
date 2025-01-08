@@ -1,0 +1,6 @@
+# Ignore artifacts:
+.circleci
+build
+coverage
+package.json
+node_modules
