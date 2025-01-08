@@ -1,5 +1,5 @@
 # Stage 1: Build and run tests
-FROM node:18-alpine AS build
+FROM node:20-alpine AS build
 
 # Create app directory
 WORKDIR /usr/src/app
@@ -15,7 +15,7 @@ COPY . .
 RUN npm run test
 
 # Stage 2: Create the production image
-FROM node:18-alpine
+FROM node:20-alpine
 
 # Create app directory
 WORKDIR /usr/src/app
